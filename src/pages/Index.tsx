@@ -1,13 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import StatsSection from "@/components/StatsSection";
+import AboutSection from "@/components/AboutSection";
+import LeisureGallery from "@/components/LeisureGallery";
+import AmenitiesSection from "@/components/AmenitiesSection";
+import PillsSection from "@/components/PillsSection";
+import InteriorsSection from "@/components/InteriorsSection";
+import PetSection from "@/components/PetSection";
+import MoreSpacesSection from "@/components/MoreSpacesSection";
+import LocationSection from "@/components/LocationSection";
+import CTASection from "@/components/CTASection";
+import FooterSection from "@/components/FooterSection";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <HeroSection />
+      <StatsSection />
+      <AboutSection />
+      <LeisureGallery />
+      <AmenitiesSection />
+      <PillsSection />
+      <InteriorsSection />
+      <PetSection />
+      <MoreSpacesSection />
+      <LocationSection />
+      <CTASection />
+      <FooterSection />
+      <WhatsAppFloat />
+    </>
   );
 };
 
