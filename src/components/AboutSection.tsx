@@ -2,13 +2,13 @@ import heroImg from "@/assets/hero-building.jpg";
 import poolImg from "@/assets/pool-area.jpg";
 
 const features = [
-  { icon: "🏙️", text: "Região valorizada da Zona Leste" },
-  { icon: "🚇", text: "600m da Estação Camilo Haddad" },
-  { icon: "🏥", text: "Próximo a hospitais e faculdades" },
-  { icon: "🌿", text: "Ambientes modernos e integrados" },
-  { icon: "🏠", text: "Apartamentos com terraço" },
-  { icon: "⭐", text: "Econ: qualidade e inovação" },
-];
+{ icon: "🏙️", text: "Região valorizada da Zona Leste" },
+{ icon: "🚇", text: "600m da Estação Camilo Haddad" },
+{ icon: "🏥", text: "Próximo a hospitais e faculdades" },
+{ icon: "🌿", text: "Ambientes modernos e integrados" },
+{ icon: "🏠", text: "Apartamentos com terraço" },
+{ icon: "⭐", text: "Econ: qualidade e inovação" }];
+
 
 const AboutSection = () => {
   return (
@@ -16,17 +16,17 @@ const AboutSection = () => {
       {/* Images */}
       <div className="relative h-[360px] lg:h-[560px]">
         <img
-          src={heroImg}
+
           alt="Fachada New Vila Ema"
           className="w-[74%] h-full object-cover rounded"
-          loading="lazy"
-        />
+          loading="lazy" src="/lovable-uploads/57bb4b8c-177c-4db0-bd6a-0d768b465b5e.jpg" />
+        
         <img
-          src={poolImg}
+
           alt="Área de lazer"
           className="absolute bottom-0 lg:-bottom-7 right-0 w-[54%] h-[210px] object-cover rounded border-4 border-secondary"
-          loading="lazy"
-        />
+          loading="lazy" src="/lovable-uploads/3b80c365-faef-46e3-8814-77e717ffa266.jpg" />
+        
         <div className="absolute top-11 -left-3 lg:-left-[18px] w-[5px] h-[110px] bg-gold" />
       </div>
 
@@ -47,19 +47,19 @@ const AboutSection = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-[14px] mt-10">
-          {features.map((f) => (
-            <div
-              key={f.text}
-              className="flex items-start gap-[11px] p-[14px] bg-gold-subtle/30 border border-gold-subtle/40 rounded-sm"
-            >
+          {features.map((f) =>
+          <div
+            key={f.text}
+            className="flex items-start gap-[11px] p-[14px] bg-gold-subtle/30 border border-gold-subtle/40 rounded-sm">
+            
               <span className="text-lg">{f.icon}</span>
               <span className="text-[13px] font-medium text-cream/80 leading-[1.4]">{f.text}</span>
             </div>
-          ))}
+          )}
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default AboutSection;
