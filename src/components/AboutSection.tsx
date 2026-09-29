@@ -19,13 +19,13 @@ const AboutSection = () => {
 
           alt="Fachada New Vila Ema"
           className="w-[74%] h-full object-cover rounded"
-          loading="lazy" src="/lovable-uploads/57bb4b8c-177c-4db0-bd6a-0d768b465b5e.jpg" />
+          loading="lazy" src={`${import.meta.env.BASE_URL}lovable-uploads/57bb4b8c-177c-4db0-bd6a-0d768b465b5e.jpg`} />
         
         <img
 
           alt="Área de lazer"
           className="absolute bottom-0 lg:-bottom-7 right-0 w-[54%] h-[210px] object-cover rounded border-4 border-secondary"
-          loading="lazy" src="/lovable-uploads/3b80c365-faef-46e3-8814-77e717ffa266.jpg" />
+          loading="lazy" src={`${import.meta.env.BASE_URL}lovable-uploads/3b80c365-faef-46e3-8814-77e717ffa266.jpg`} />
         
         <div className="absolute top-11 -left-3 lg:-left-[18px] w-[5px] h-[110px] bg-gold" />
       </div>
